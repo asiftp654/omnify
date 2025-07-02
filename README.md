@@ -81,7 +81,7 @@ DJANGO_TESTING=true python manage.py test
 
 - List all the events
 
-(./omnify/staticfiles/images/events_get_api.png)
+![List Events](./omnify/staticfiles/images/events_get_api.png)
 
 ---
 
@@ -104,7 +104,7 @@ DJANGO_TESTING=true python manage.py test
 ![Successfull Registraion](./omnify/staticfiles/images/event_register_success.png)
 
 ![Register Attendees Validations](./omnify/staticfiles/images/event_register_error.png)
-(./omnify/staticfiles/images/event_register_error1.png)
+![Register Attendees Validations](./omnify/staticfiles/images/event_register_error1.png)
 
 ---
 
