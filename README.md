@@ -14,6 +14,7 @@ A simple, scalable, and dockerized Django REST API that allows users to:
 - View attendees per event with pagination
 - Timezone-aware datetime handling
 - Dockerized for easy deployment
+- Standardized response on both success on errors
 - Optional SQLite for testing; PostgreSQL for production
 
 ---
@@ -48,3 +49,16 @@ cd event-management-api
 ```bash
 docker-compose up --build
 ```
+
+### 4. Run the test cases
+
+- I have written some test cases, in order to run those test cases
+
+```bash
+docker-compose exec web
+DJANGO_TESTING=true python manage.py test 
+```
+
+### ER Diagram
+
+![ER Diagram](./ER_Diagram.png)
