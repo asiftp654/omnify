@@ -46,6 +46,8 @@ cd omnify
 
 ### 3. Run the Applicatoin
 
+- Try sudo if dont have permission to run the docker command
+
 ```bash
 docker-compose up --build
 ```
@@ -79,15 +81,16 @@ DJANGO_TESTING=true python manage.py test
 
 - List all the events
 
-![List Events](./omnify/staticfiles/images/event_get_api.png)
+(./omnify/staticfiles/images/events_get_api.png)
 
 ---
 
 ### 2. POST /events
 
 - Create a Event (with added validations)
+-(ex) Validations like start time must greater than end time
 
-![Create Events With Validation](./omnify/staticfiles/images/event_post_error.png)
+![Create Events With Validation](./omnify/staticfiles/images/events_post_error.png)
 
 ![Successfully Created Events](./omnify/staticfiles/images/event_post_success.png)
 
@@ -96,6 +99,7 @@ DJANGO_TESTING=true python manage.py test
 ### 3. POST /events/{event_id}/register
 
 - Register Attendees to a event
+- Handled concurrency issues, email duplication issue, event not found issues.
 
 ![Successfull Registraion](./omnify/staticfiles/images/event_register_success.png)
 
