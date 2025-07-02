@@ -25,7 +25,6 @@ A simple, scalable, and dockerized Django REST API that allows users to:
 - **Language**: Python
 - **Backend**: Django, Django REST Framework
 - **Database**: PostgreSQL (default), SQLite (for tests)
-- **Docs**: Swagger/OpenAPI (via drf-spectacular or drf-yasg)
 - **Containerization**: Docker, Docker Compose
 
 ---
