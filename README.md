@@ -40,8 +40,8 @@ A simple, scalable, and dockerized Django REST API that allows users to:
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/event-management-api.git
-cd event-management-api
+git clone https://github.com/asiftp654/omnify.git
+cd omnify
 ```
 
 ### 3. Run the Applicatoin
@@ -50,7 +50,13 @@ cd event-management-api
 docker-compose up --build
 ```
 
-### 4. Run the test cases
+### 4. Test the APIS
+
+- You can able to access all the apis in the requirements with the base url http://127.0.0.1:8000
+
+---
+
+### 5. Run the test cases
 
 - I have written some test cases, in order to run those test cases
 
@@ -59,6 +65,49 @@ docker-compose exec web
 DJANGO_TESTING=true python manage.py test 
 ```
 
+---
+
 ### ER Diagram
 
-![ER Diagram](./ER_Diagram.png)
+![ER Diagram](./omnify/staticfiles/images/ER_Diagram.png)
+
+---
+
+### Sample API Requests
+
+### 1. GET /events
+
+- List all the events
+
+![List Events](./omnify/staticfiles/images/event_get_api.png)
+
+---
+
+### 2. POST /events
+
+- Create a Event (with added validations)
+
+![Create Events With Validation](./omnify/staticfiles/images/event_post_error.png)
+
+![Successfully Created Events](./omnify/staticfiles/images/event_post_success.png)
+
+---
+
+### 3. POST /events/{event_id}/register
+
+- Register Attendees to a event
+
+![Successfull Registraion](./omnify/staticfiles/images/event_register_success.png)
+
+![Register Attendees Validations](./omnify/staticfiles/images/event_register_error.png)
+(./omnify/staticfiles/images/event_register_error1.png)
+
+---
+
+### 4. GET /events/{event_id}/attendees
+
+- List all the attendees for a event
+
+![List Attendess with Pagination Registraion](./omnify/staticfiles/images/attendees_listing.png)
+
+---
