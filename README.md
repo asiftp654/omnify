@@ -49,7 +49,8 @@ cd omnify
 - Try sudo if dont have permission to run the docker command
 
 ```bash
-docker-compose up --build
+docker-compose build
+docker-compose up
 ```
 
 ### 4. Test the APIS
