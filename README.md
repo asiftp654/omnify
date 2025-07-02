@@ -64,8 +64,18 @@ docker-compose up
 - I have written some test cases, in order to run those test cases
 
 ```bash
-docker-compose exec web
+docker-compose exec web bash
 DJANGO_TESTING=true python manage.py test 
+```
+
+---
+
+### 6. To Stop the Appication
+
+- CTRL + C in the terminal and then
+
+```bash
+docker-compose down
 ```
 
 ---
