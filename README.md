@@ -1,3 +1,4 @@
+# Omnify
 # 🎟️ Mini Event Management System API
 
 A simple, scalable, and dockerized Django REST API that allows users to:
