@@ -32,12 +32,9 @@ A simple, scalable, and dockerized Django REST API that allows users to:
 
 ### 1. Docker Requirements
 
-Make sure Docker and Docker Compose are installed.
-
-Install Docker
-
-Install Docker Compose
-
+- Make sure Docker and Docker Compose are installed.
+- Install Docker
+- Install Docker Compose
 
 ### 2. Clone the Repository
 
@@ -46,7 +43,7 @@ git clone https://github.com/your-username/event-management-api.git
 cd event-management-api
 ```
 
-### 2. Run the Applicatoin
+### 3. Run the Applicatoin
 
 ```bash
 docker-compose up --build
